@@ -3,22 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Card</title>
-     <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#08111f">
+    <title>Aashish Yadav | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="page-shell">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
 
-    <div class="card">
- <img
-    src="assets/aashu.png"
-    alt="smiling in the card"
-    class="avatar">
-    <div>
-    <h3> AASHISH YADAV</h3>
-    <P>Frontend Developer</P>
-    <h4> Gr.Noida, UP</h4>
-</div>
-    </div>
+        <section class="card-scene" aria-label="Digital business card">
+            <div class="business-card" id="business-card">
+                <article class="card-face card-front">
+                    <div class="card-topline">
+                        <span class="eyebrow">AY / 21</span>
+                        <span class="availability"><span class="status-dot"></span> Available for work</span>
+                    </div>
 
+                    <div class="identity">
+                        <div class="avatar-frame">
+                            <img src="assets/aashu.png" alt="Portrait of Aashish Yadav" class="avatar">
+                        </div>
+                        <div class="identity-copy">
+                            <p class="role">Frontend Developer</p>
+                            <h1>Aashish<br><span>Yadav</span></h1>
+                            <p class="location"><span aria-hidden="true">↗</span> Greater Noida, India</p>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <p class="signature">Turning Ideas <br> <span class="highlight">Into Reality.</span></p>
+                        <button class="flip-button" type="button" aria-label="Show contact details" aria-controls="business-card">
+                            <span>Get in touch</span>
+                            <span class="button-arrow" aria-hidden="true">↗</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-face card-back" aria-label="Contact details">
+                    <div class="card-topline">
+                        <span class="eyebrow">CONTACT</span>
+                        <button class="close-button flip-button" type="button" aria-label="Return to profile">×</button>
+                    </div>
+
+                    <div class="back-content">
+                        <p class="role">Let's build something</p>
+                        <h2>Say <span>hello.</span></h2>
+                        <div class="contact-list">
+                            <a href="mailto:aashish.yadav@example.com" class="contact-row">
+                                <span class="contact-icon">@</span>
+                                <span><small>Email</small>aashuyadav11000@gmail.com</span>
+                                <span class="row-arrow">↗</span>
+                            </a>
+                            <a href="tel:+918650492198" class="contact-row">
+                                <span class="contact-icon">✆</span>
+                                <span><small>Phone</small>+91 8650492198</span>
+                                <span class="row-arrow">↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="back-footer">
+                        <div class="social-links" aria-label="Social links">
+                            <a href="https://github.com/aashuyadavv" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.linkedin.com/in/aashuyadavv/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                        <button class="copy-button" type="button" data-email="aashuyadav11000@gmail.com">
+                            <span class="copy-label">Copy email</span>
+                            <span aria-hidden="true">⌘ C</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <p class="hint"><span>Drag your cursor</span> over the card to explore</p>
+    </main>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
